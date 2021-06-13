@@ -1,0 +1,51 @@
+{% extends 'baza.html' %}
+{%  block content %}
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 mx-auto">
+    <div id="pagina_1">
+        <div class="row">
+            <h2>Lista mecanisme</h2>
+        </div>
+        <div class="row">
+            <div id="tabel_mecanisme"></div>
+        </div>
+    </div>
+    <div id="pagina_2" style="display: none">
+        <div class="row">
+            <h2>Mecanism</h2>
+        </div>
+        <div class="row" style="padding-top: 30px">
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                Nume
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="nume_mecanims"></div>
+        </div>
+        <div class="row">
+            <h2>Motoare</h2>
+        </div>
+        <div id="motoare"></div>
+        <div class="row">
+            <h2>Faze</h2>
+        </div>
+        <div id="faze"></div>
+                <div class="row " style="padding-top: 30px">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="schimbaMecanismBTN">Schimba mecanism</button>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="testBtn">Foloseste mecanism</button>
+            </div>
+        </div>
+    </div>
+    <div id="pagina_3" style="display: none">
+        <div class="row" id="start">
+            <button type="button" class="btn btn-primary" id="startBtn">Start</button>
+        </div>
+    </div>
+
+
+</div>
+<script src="{{url_for('static', filename='foloseste_mecanism.js')}}"></script>
+{% endblock %}
+

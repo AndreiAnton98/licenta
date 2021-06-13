@@ -1,0 +1,197 @@
+{% extends 'baza.html' %}
+{%  block content %}
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 mx-auto">
+    <div id="pagina_1">
+        <div class="row">
+            <h2>Mecanism</h2>
+        </div>
+        <div class="row" style="padding-top: 30px">
+
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                Nume
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="mecanism_nume"></div>
+        </div>
+        <div class="row" style="padding-top: 30px">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="acasaBtn">Acasa</button>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="MotoareBtn">Adauga motoare</button>
+            </div>
+        </div>
+    </div>
+    <div id="pagina_2" style="display: none">
+        <div class="row">
+            <h2>Motoare</h2>
+        </div>
+        <div id="motoare">
+            <div id="motor_1">
+                <div class="row">
+                    <h4>Motor 1</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Nume
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_nume"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    </div>
+                </div>
+                <div class="row" style="padding-top: 15px">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Pozitie initiala
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_initial"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Tipul actiunii
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_actiune"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Senzori de capat de cursa</h6>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Piston retras
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_min"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Piston extins
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_max"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h6>Actuatori</h6>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Extinde piston
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_plus"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Retrage piston
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="motor_1_minus"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row justify-content-aroud" style="padding-top: 30px">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                        <button type="button" class="btn btn-danger" id="motor_1_elimina">Elimina</button>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                        <button type="button" class="btn btn-primary" id="motor_2_adauga">Adauga motor</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="padding-top: 30px">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="schimbaMecanismBtn">Schimba mecanism</button>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="secventaBtn">Secvanta</button>
+            </div>
+        </div>
+    </div>
+    <div id="pagina_3" style="display: none">
+
+        <div class="row">
+            <h2>Secventa</h2>
+        </div>
+        <div id="faze">
+            <div id="faza_1">
+                <div class="row">
+                    <h4>Faza 1</h4>
+                </div>
+                <div class="row" style="padding-top: 15px">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Motor
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="faza_1_motor"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                Actiune
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="faza_1_actiune"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row justify-content-aroud" style="padding-top: 30px">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                        <button type="button" class="btn btn-danger" id="faza_1_elimina">Elimina</button>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                        <button type="button" class="btn btn-primary" id="faza_2_adauga">Adauga faza</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row " style="padding-top: 30px">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="schimbaMotoareBtn">Schimba motoare</button>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="testeazaBtn">Testeaza secventa</button>
+            </div>
+        </div>
+    </div>
+    <div id="pagina_4" style="display: none;">
+        <div class="row" id="eroare" style='display:none'>
+
+        </div>
+        <div class="row" id="incheiat" style='display:none'>
+            Secventa incheiata
+        </div>
+        <div class="row" >
+            <button type="button" class="btn btn-primary" id="startTestBtn">Start test</button>
+        </div>
+        <div class="row " id="buttons_graph" style="padding-top: 30px">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="schimbaFazeBtn">Schimba faze</button>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 mx-auto">
+                <button type="button" class="btn btn-primary" id="salveazaMecanismBtn">Salveaza mecanism</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="{{url_for('static', filename='mecanism.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,20 @@
+#tempChart {
+    width: 100% !important;
+    height: 400px !important;
+}
+#humidityChart {
+    width: 100% !important;
+    height: 400px !important;
+}
+.chart-sequence{
+    width: 80% !important;
+    height: 150px !important;
+    display: inline-block;
+}
+.position-labels{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: flex-end;
+}
